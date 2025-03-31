@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karen O'Neil</title>
+    <link rel="icon" href="./img/koneil/favicon.png" type="image/png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <!-- link swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/0.header.css">
+    <link rel="stylesheet" href="./css/0.fonts.css">
+    <link rel="stylesheet" href="./css/1.mainPage.css">
+
+    <script src="./js/PORT.database.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="headerLeft subHeader">
+            <a href="#">
+                <div class="artworks">Artworks</div>
+            </a>
+            <a href="#">
+                <div class="archive">Archive</div>
+            </a>
+        </div>
+
+        <div class="headerCenter">
+            <a href="#">
+                <div class="home">KAREN O'NEIL</div>
+            </a>
+        </div>
+
+        <div class="headerRight subHeader">
+            <a href="#">
+                <div class="book">Book</div>
+            </a>
+            <a href="#">
+                <div class="about">About</div>
+            </a>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <!-- main banner -->
+        <section class="mainBanner">
+            <div class="mbQuote">
+                <div>Light,</div>
+                <div><em>transcending</em></div>
+                <div>the physical world.</div>
+            </div>
+        </section>
+
+        <!-- statement -->
+        <section class="statement contentMargin">
+            <div><em>You look, but you don't see.</em></div>
+            <div>What is actually there, in front of us, is always more exciting and unexpected than what we think should be there. I've spent decades learning to see and communicate my observations through painting.</div>
+        </section>
+
+        <div class="horLine contentMargin"></div>
+
+        <!-- recent works -->
+        <section class="recentWorks">
+            <div class="contentMargin">
+                <div class="recHeading headingFont">Recent Works</div>
+                <div class="titles"></div>
+                <div class="works"></div>
+            </div>
+        </section>
+
+        <div class="horLine contentMargin"></div>
+
+        <!-- archive -->
+        <section class="archive">
+            <div class="contentMargin">
+                <div class="arcHeading headingFont">Archive</div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/koneil/4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/koneil/47.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/koneil/19.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/koneil/42.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/koneil/44.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/koneil/15.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide wrapView">
+                            <a href="PORT4.archive.html">
+                                <span class="viewMore" onmouseenter="viewMore()" onmouseleave="viewNo()">View More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="horLine contentMargin"></div>
+
+        <!-- newsletter -->
+        <section class="newsletter">
+            <div class="newsBgImg"></div>
+            <div class="newsTextWrap">
+                <div class="newsSubscribe mbQuote">
+                    <div>Look and&nbsp;<em>see</em>&nbsp;with Karen O'Neil.</div>
+                    <div>Be the first to know about news, updates, and the latest works.</div>
+                </div>
+                <div class="newsEmail">
+                    <form action="#">
+                        <input type="email" class="emailAddr" name="" id="" placeholder="Email address">
+                    </form>
+                    <div>Subscribe</div>
+                </div>
+            </div>
+            <div class="mbQuote">
+                <div>Light,</div>
+                <div><em>transcending</em></div>
+                <div>the physical world.</div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="contentMargin">
+                <div class="footerLeft">
+                    <div>© 2025 Karen O'Neil</div>
+                    <div>Privacy Policy</div>
+                    <div>Terms of Use</div>
+                </div>
+    
+                <div class="footerRight">
+                    <div class="fR1 fR">
+                        <div>Newsletter</div>
+                        <div>
+                            <form action="#">
+                                <input type="email" class="emailAddr" name="" id="" placeholder="Email address">
+                            </form>
+                        </div>
+                        <div>Subscribe</div>
+                    </div>
+    
+                    <div class="fR2 fR">
+                        <a href="2.userAccess.html">
+                            <div class="myPage">My Page</div>
+                        </a>
+                        <div>Shipping & Returns</div>
+                        <div>Trade / Press</div>
+                    </div>
+    
+                    <div class="fR3 fR">
+                        <div>Contact</div>
+                        <div>Instagram</div>
+                        <div>Facebook</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/1.mainPage.js"></script>
+</body>
+</html>

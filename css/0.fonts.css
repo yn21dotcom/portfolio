@@ -1,0 +1,62 @@
+.contentMargin {
+    /* margin: 0 40px; */
+    margin: 0 3vw;
+}
+.mbQuote {
+    width: 100%;
+    color: white;
+
+    margin-bottom: 5vh;
+    
+    font-family: "Instrument Serif", serif;
+    font-size: clamp(80px, 6vw, 6vw);
+    text-shadow: 1px 1px 50px rgb(30, 30, 30);
+
+    position: sticky;
+    top: 105px;
+
+    user-select: none;
+}
+.mbQuote > div {
+    display: flex;
+    justify-content: center;
+}
+.headingFont {
+    font-family: "Lexend Giga", sans-serif;
+    /* font-size: 30px; */
+    /* font-size: 3vh; */
+    font-size: 1.73vw;
+}
+.emailAddr {
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: center;
+}
+.emailAddr::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+.emailAddr:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+    color: white;
+}
+/* media queries */
+@media screen and (min-width: 1px) and (max-width: 400px) {
+    .mbQuote {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .mbQuote {
+        font-size: 60px;
+    }
+}
+/* @media screen and (min-width: 300px) and (max-width: 900px) {
+    .headingFont {
+        font-size: 2vh;
+    }
+} */

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive ･ Karen O'Neil</title>
+    <link rel="icon" href="./img/koneil/favicon.png" type="image/png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/0.header.css">
+    <link rel="stylesheet" href="./css/4.archive.css">
+    <script src="./js/PORT.database.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="headerLeft subHeader">
+            <a href="#">
+                <div class="artworks">Artworks</div>
+            </a>
+            <a href="#">
+                <div class="archive">Archive</div>
+            </a>
+        </div>
+
+        <div class="headerCenter">
+            <a href="#">
+                <div class="home">KAREN O'NEIL</div>
+            </a>
+        </div>
+
+        <div class="headerRight subHeader">
+            <a href="#">
+                <div class="book">Book</div>
+            </a>
+            <a href="#">
+                <div class="about">About</div>
+            </a>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <!-- left -->
+        <div class="left Xwall wall">
+            <!-- one -->
+            <img src="./img/koneil/19.jpg" alt="" id="p19" onclick="slide(0)">
+            <img src="./img/koneil/60.jpg" alt="" id="p60" onclick="slide(1)">
+            <img src="./img/koneil/27.jpg" alt="" id="p27" onclick="slide(2)">
+            <!-- two -->
+            <img src="./img/koneil/16.jpg" alt="" id="p16" onclick="slide(3)">
+            <img src="./img/koneil/23.jpg" alt="" id="p23" onclick="slide(4)">
+            <img src="./img/koneil/24.jpg" alt="" id="p24" onclick="slide(5)">
+            <img src="./img/koneil/48.jpg" alt="" id="p48" onclick="slide(6)">
+            <!-- three -->
+            <img src="./img/koneil/36.jpg" alt="" id="p36" onclick="slide(7)">
+            <img src="./img/koneil/42.jpg" alt="" id="p42" onclick="slide(8)">
+            <img src="./img/koneil/2.jpg" alt="" id="p2" onclick="slide(9)">
+            <img src="./img/koneil/28.jpg" alt="" id="p28" onclick="slide(10)">
+            <img src="./img/koneil/52.jpg" alt="" id="p52" onclick="slide(11)">
+            <img src="./img/koneil/58.jpg" alt="" id="p58" onclick="slide(12)">
+        </div>
+        <div class="leftBehind Xwall wall"></div>
+
+        <!-- right -->
+        <div class="right Xwall wall">
+            <!-- one -->
+            <img src="./img/koneil/38.jpg" alt="" id="p38" onclick="slide(13)">
+            <img src="./img/koneil/39.jpg" alt="" id="p39" onclick="slide(14)">
+            <img src="./img/koneil/40.jpg" alt="" id="p40" onclick="slide(15)">
+            <!-- two -->
+            <img src="./img/koneil/12.jpg" alt="" id="p12" onclick="slide(16)">
+            <img src="./img/koneil/15.jpg" alt="" id="p15" onclick="slide(17)">
+            <!-- three -->
+            <img src="./img/koneil/56.jpg" alt="" id="p56" onclick="slide(18)">
+            <img src="./img/koneil/37.jpg" alt="" id="p37" onclick="slide(19)">
+            <img src="./img/koneil/44.jpg" alt="" id="p44" onclick="slide(20)">
+            <!-- four -->
+            <img src="./img/koneil/4.jpg" alt="" id="p4" onclick="slide(21)">
+            <img src="./img/koneil/47.jpg" alt="" id="p47" onclick="slide(22)">
+            <img src="./img/koneil/51.jpg" alt="" id="p51" onclick="slide(23)">
+        </div>
+        <div class="rightBehind Xwall wall"></div>
+
+        <!-- back -->
+        <div class="back wall">
+            <div class="bLeft">
+                <div id="slideBox">
+                    <div class="text">Click on a painting to view here.</div>
+                </div>
+            </div>
+
+            <div class="bRight">
+                <div class="desc"></div>
+            </div>
+        </div>
+    </div>
+<script src="./js/4.archive.js"></script>
+</body>
+</html>

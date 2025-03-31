@@ -1,0 +1,20 @@
+.quoteFontPos {
+    width: 100%;
+    color: white;
+    font-family: "Instrument Serif", serif;
+    font-size: 110px;
+    text-shadow: 1px 1px 50px rgb(30, 30, 30);
+
+    position: fixed;
+    top: 10%;
+    left: 50vw;
+    transform: translate(-50%, 0);
+}
+.quoteFontPos > div {
+    display: flex;
+    justify-content: center;
+}
+.subheadingFont {
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 30px;
+}

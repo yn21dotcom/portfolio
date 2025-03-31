@@ -1,0 +1,201 @@
+body {
+    width: 100vw;
+    /* height: 100vh; */
+    margin: 0;
+    background: url(../img/koneil/5.jpg) no-repeat top / cover;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+
+    /* font-family: "Lexend Giga", sans-serif; */
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.ml20 {
+    margin-left: 20px;
+}
+.gray {
+    /* color: gray; */
+    color: rgba(255, 255, 255, 0.6);
+
+}
+.wrap {
+    /* border: 1px solid;
+    box-sizing: border-box; */
+    width: calc(100% - 100px);
+    height: calc(100% - 90px);
+    margin: 90px 50px 20px;
+}
+.pageTitle {
+    color: white;
+    font-weight: 900;
+    text-shadow: 1px 1px 40px rgb(30, 30, 30);
+
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.subWrap {
+    /* border: 1px solid;
+    box-sizing: border-box; */
+    margin-top: 5px;
+    display: flex;
+    gap: 30px;
+}
+.box {
+    /* border: 1px solid;
+    box-sizing: border-box; */
+    width: calc((100% - 60px) /3);
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.subBox {
+    border: 1px solid white;
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    padding: 15px 15px;
+    border-radius: 30px;
+}
+.sbTitle {
+    font-size: 25px;
+}
+.icon {
+    width: 13px;
+    height: 13px;
+    background: url(../img/koneil/edit.png) no-repeat center / cover;
+}
+.profile > div {
+    display: flex;
+    gap: 5px;
+}
+.addresses > .sbSubTitle {
+    display: flex;
+    gap: 20px;
+}
+.addresses > .sbSubSubTitle {
+    display: flex;
+    gap: 5px;
+}
+/* leftBottom */
+.lock {
+    width: 13px;
+    height: 13px;
+    background: url(../img/koneil/lock.png) no-repeat center / cover;
+}
+.leftBottom .sbSubTitle {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+.mail {
+    width: 13px;
+    height: 13px;
+    background: url(../img/koneil/email.png) no-repeat center / cover;
+}
+.chk > label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#chk {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+#chk:checked:checked::after {
+    content: "✓";
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    font-size: 16px;
+    color: black;
+}
+/* center */
+.center > .subBox {
+    height: 100%;
+}
+.picBox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.pic {
+    width: calc((100% - 10px) /2);
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic > img {
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+/* rightBottom */
+.rightBottom {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.orders {
+    /* border: 1px solid;
+    box-sizing: border-box; */
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    gap: 10px;
+}
+.orderBox {
+    border: 1px solid white;
+    width: calc((100% - 20px) /2);
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.order1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.order1 > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.pin {
+    width: 13px;
+    height: 13px;
+    background: url(../img/koneil/pin.png) no-repeat center / cover;
+}
+.date {
+    margin-left: 18px;
+}
+.wrapView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.viewMore {
+    /* color: rgb(200, 200, 200); */
+    /* border: 1px solid;
+    border-radius: 20px; */
+    /* padding: 10px; */
+
+    font-size: 13px; 
+
+    cursor: pointer;
+}

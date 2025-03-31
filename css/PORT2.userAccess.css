@@ -1,0 +1,142 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: url(../img/koneil/13.jpg) no-repeat 0% 20% / cover;
+}
+a {
+    display: block;
+}
+header {
+    opacity: 0.5;
+}
+.inputFont input{
+    background-color: transparent;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.inputFont input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+.inputFont input:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+    color: white;
+}
+.wrap {
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+.text {
+    width: 100%;
+    color: white;
+    /* margin-top: 150px; */
+    font-family: "Instrument Serif", serif;
+    font-size: 110px;
+    text-shadow: 1px 1px 50px rgb(30, 30, 30);
+
+    transition: all 0.5s;
+
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.authentication {
+    color: white;
+    margin-top: 380px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.signupWrap {
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.signup {
+    width: 250px;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid;
+    border-radius: 5px;
+}
+.login {
+    width: 50px;
+    margin: 10px auto;
+}
+#loginInfo {
+    margin-top: 20px;
+    font-size: 13px;
+    /* display: none; */
+    opacity: 0;
+    transition: all 0.5s;
+}
+#loginInfo input {
+    /* background-color: transparent; */
+    color: white;
+    margin-bottom: 5px;
+    /* border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; */
+}
+/* #loginInfo input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+#loginInfo input:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+    color: white;
+} */
+.enter {
+    margin: 5px auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.enter > img {
+    width: 15px;
+}
+.forgot {
+    cursor: pointer;
+}
+#signupInfo {
+    /* border: 1px solid;  */
+
+    width: 250px;
+    /* height: 400px; */
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    display: flex;
+    flex-direction: column;
+
+    opacity: 0;
+    transition: all 0.5s;
+}
+#signupInfo input {
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px;
+
+    /* font-size: 18px; */
+}
+#signupInfo input::placeholder {
+    /* font-size: 18px; */
+    font-weight: lighter;
+    padding: 5px;
+    box-sizing: border-box;
+}

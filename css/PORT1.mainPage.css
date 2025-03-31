@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+}
+/* common */
+a {
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+.contentMargin {
+    margin: 0 30px;
+}
+.horLine {
+    width: calc(100% - 60px);
+    height: 1px;
+    background-color: rgb(200, 200, 200);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.pointer {
+    cursor: pointer;;
+}
+/*  */
+.mainBanner {
+    width: 100vw;
+    height: 100vw;
+    background: url(../img/koneil/64.jpg) no-repeat center / cover;
+    overflow: hidden;
+
+    position: relative;
+}
+.statement {
+    width: calc(100% - 60px);
+    padding: 30px 0 0;
+    box-sizing: border-box;
+    font-family: "Cormorant", serif;
+    font-size: 50px;
+}
+.recentWorks {
+    background-color: rgb(240, 240, 240);
+}
+.recWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.recHeading {
+    width: 100%;
+    padding-top: 30px;
+}
+.titles {
+    width: 50%;
+    color: rgb(200, 200, 200);
+    padding: 30px 0;
+    box-sizing: border-box;
+
+    font-family: "Instrument Serif", serif;
+    font-size: 47px;
+}
+.titles > div {
+    /* margin-bottom: 30px; */
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.titles > .removePadding {
+    margin-bottom: 0px;
+}
+.works {
+    width: 50%;
+    padding: 30px 0 30px 30px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+.works > img {
+    height: calc(100% - 60px);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* transform: translate(-50%, -50%); */
+
+    transition: all 0.2s;
+}
+.swiper {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+.wrapView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.viewMore {
+    color: rgb(200, 200, 200);
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.adjustMargin {
+    margin-top: 10px;
+}
+.fqWrap {
+    position: relative;
+    /* height: 500px; */
+    height: 1200px;
+}
+.fqWrap > img {
+    position: relative;
+    z-index: 10000;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: top;
+}
+.fqSubWrap {
+    /* background-color: cornflowerblue; */
+    width: 100%;
+    position: absolute;
+    top: 350px;
+    z-index: 100000;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footerSubscribe {
+    font-size: 50px;
+    text-shadow: 1px 1px 40px rgb(30, 30, 30);
+    position: static;
+    transform: translate(0, 0);
+}
+.footerEmail {
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+.emailAddr {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: center;
+}
+.emailAddr::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+.emailAddr:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+    color: white;
+}
+.footerEmail > span {
+    color: white;
+    border: 1px solid;
+    padding: 5px 20px;
+    box-sizing: border-box;
+
+    cursor: pointer;
+}
+.footerQuote {
+    color: black;
+    text-shadow: none;
+    top: 40%;
+    visibility: hidden;
+    position: sticky;
+}
+.mainFooter {
+    height: 400px;
+    background: url(../img/koneil/63.jpg) no-repeat 50% 90% / cover;
+    padding: 300px 30px 30px;
+    box-sizing: border-box;
+}
+footer {
+    /* border: 1px solid;
+    box-sizing: border-box; */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 23px;
+
+    display: flex;
+
+    /* height: 400px;
+    background: url(../img/koneil/63.jpg) no-repeat 50% 90% / cover;
+    padding: 300px 30px 30px;
+    box-sizing: border-box; */
+}
+.footer_L {
+    /* border: 1px solid; */
+    /* box-sizing: border-box; */
+    width: 50%;
+}
+.footer_R {
+    width: 50%;
+    display: flex;
+}
+.fR {
+    width: calc(100%/3);
+}
+.fR1 .emailAddr {
+    width: 100%;
+    padding: 0 10px 0 0;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    text-align: left;
+}
+.fR1 .emailAddr:focus {
+    outline: none;
+}
+.myPage {
+    text-shadow: 1px 1px 8px rgb(0, 0, 0);
+}

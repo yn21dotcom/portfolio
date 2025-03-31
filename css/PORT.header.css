@@ -1,0 +1,38 @@
+a {
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    padding: 20px 30px;
+    box-sizing: border-box;
+
+    font-family: "Lexend Giga", sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+
+    transition: all 0.5s;
+}
+.subHeader {
+    display: flex;
+    gap: 30px;
+}
+.home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+    font-weight: 900;
+}

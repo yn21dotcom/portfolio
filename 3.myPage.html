@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page ･ Karen O'Neil</title>
+    <link rel="icon" href="./img/koneil/favicon.png" type="image/png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/0.header.css">
+    <link rel="stylesheet" href="./css/0.fonts.css">
+    <link rel="stylesheet" href="./css/3.myPage.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="headerLeft subHeader">
+            <a href="#">
+                <div class="artworks">Artworks</div>
+            </a>
+            <a href="#">
+                <div class="archive">Archive</div>
+            </a>
+        </div>
+
+        <div class="headerCenter">
+            <a href="#">
+                <div class="home">KAREN O'NEIL</div>
+            </a>
+        </div>
+
+        <div class="headerRight subHeader">
+            <a href="#">
+                <div class="book">Book</div>
+            </a>
+            <a href="#">
+                <div class="about">About</div>
+            </a>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <div class="pageTitle headingFont">
+            <div>My Page</div>
+            <div class="line"></div>
+        </div>
+
+        <div class="pageContent">
+
+            <!-- left -->
+            <div class="left subWrap">
+                <!-- profile -->
+                <div class="profile box">
+                    <div class="boxTitle headingFont">Profile</div>
+
+                    <!-- user info -->
+                    <div class="userInfo subBox mb10">
+                        <div class="subBoxTitle">
+                            <div class="name">John Doe</div>
+                            <div class="edit" onclick="edit(0)"></div>
+                        </div>
+                        <div class="subBoxContent ml20 mb10">
+                            <div class="mobile">
+                                +82 10 1234 5678
+                            </div>
+                            <div class="email">
+                                example@email.com
+                            </div>
+                            <div class="password">
+                                ●●●●●●●●●●
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- addresses -->
+                    <div class="addresses subBox mb10">
+                        <div class="subBoxTitle mb10">
+                            <div>Addresses</div>
+                            <div class="addrAdd gray" onclick="addAddr()">+ Add</div>
+                        </div>
+                        <div class="subBoxContent">
+                            <div class="defaultAddr">
+                                <div class="gray">Default address</div>
+                                <div class="edit" onclick="edit(1)"></div>
+                            </div>
+                            <div class="addrDetails ml20">
+                                <div>John Doe</div>
+                                <div>123 Street, Town, Whatprovince 00000, Somenation</div>
+                                <div>Suite 456</div>
+                                <div>00000</div>
+                                <div>Anycity</div>
+                                <div>Whatprovince</div>
+                                <div>Somenation</div>
+                                <div>+82 10 1234 5678</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- selections -->
+                <div class="selections box">
+                    <div class="boxTitle headingFont">My Selections</div>
+
+                    <div class="displayBox">
+                        <div class="imgBox">
+                            <img src="./img/koneil/13.jpg" alt="">
+                        </div>
+                        <div class="imgBox">
+                            <img src="./img/koneil/16.jpg" alt="">
+                        </div>
+                        <div class="imgBox">
+                            <img src="./img/koneil/30.jpg" alt="">
+                        </div>
+                        <div class="imgBox">
+                            <img src="./img/koneil/45.jpg" alt="">
+                        </div>
+                        <div class="imgBox">
+                            <img src="./img/koneil/55.jpg" alt="">
+                        </div>
+                        <div class="imgBox">
+                            <img src="./img/koneil/20.jpg" alt="">
+                        </div>
+                        <div class="imgBox">
+                            <img src="./img/koneil/59.jpg" alt="">
+                        </div>
+                        <div class="imgBox">
+                            <img src="./img/koneil/17.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right -->
+            <div class="right subWrap">
+                <!-- settings -->
+                <div class="settings box">
+                    <div class="boxTitle headingFont">Settings</div>
+
+                    <!-- logout-->
+                    <div class="logout subBox mb10">
+                        <div class="subBoxTitle" onclick="logout()">
+                            <div class="lock"></div>
+                            <div>Log out</div>
+                        </div>
+                        <div class="subBoxContent ml20">
+                            <div><em>Log out of this device only.</em></div>
+                        </div>
+                    </div>
+
+                    <!-- logout everywhere-->
+                    <div class="logout subBox mb10">
+                        <div class="subBoxTitle" onclick="logout()">
+                            <div class="lock"></div>
+                            <div>Log out everywhere</div>
+                        </div>
+                        <div class="subBoxContent ml20">
+                            <div><em>You will be logged out of this device as well.</em></div>
+                            <div class="gray">If you've lost a device or have security concerns, log out everywhere to ensure the security of your account.</div>
+                        </div>
+                    </div>
+
+                    <!-- newsletter -->
+                    <div class="newsletter subBox mb10">
+                        <div class="subBoxTitle">
+                            <div class="mail"></div>
+                            <div>Receive news and updates</div>
+                        </div>
+                        <div class="subBoxContent ml20">
+                            <div><em>You will be subscribed to Karen O'Neil's newsletter.You can unsubscribe at any time.</em></div>
+                            <div class="chk">
+                                <label for="chk">
+                                    <input type="checkbox" name="" id="chk">
+                                    Email me with news and updates.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- bag -->
+                <div class="bag box">
+                    <div class="boxTitle headingFont">My Bag</div>
+
+                    <div class="displayBox">
+                        <div class="imgBox">
+                            <img src="./img/koneil/1.jpg" alt="">
+                        </div>
+                        <div class="imgBox">
+                            <img src="./img/koneil/61.jpg" alt="">
+                        </div>
+                        <div class="imgBox">
+                            <img src="./img/koneil/25.jpg" alt="">
+                        </div>
+                        <div class="imgBox">
+                            <img src="./img/koneil/8.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- orders -->
+                <div class="orders box">
+                    <div class="boxTitle headingFont">My Purchases</div>
+
+                    <div class="ordersWrap">
+                        <div class="orderBox subBox">
+                            <div class="obLeft">
+                                <div class="subBoxTitle">
+                                    <div class="pin"></div>
+                                    <div class="status">Delivering</div>
+                                </div>
+                                <div class="date ml19 gray">&nbsp;</div>
+                                <div class="orderNo ml19 gray">Order #12345</div>
+                            </div>
+                            <div class="obRight">
+                                <div class="obImgBox">
+                                    <img src="./img/koneil/31.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orderBox subBox">
+                            <div class="obLeft">
+                                <div class="subBoxTitle">
+                                    <div class="pin"></div>
+                                    <div class="status">Delivered</div>
+                                </div>
+                                <div class="date ml19 gray">January 20, 2025</div>
+                                <div class="orderNo ml19 gray">Order #67890</div>
+                            </div>
+                            <div class="obRight">
+                                <div class="obImgBox">
+                                    <img src="./img/koneil/62.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="contentMargin">
+            <div class="footerLeft">
+                <div>© 2025 Karen O'Neil</div>
+                <div>Privacy Policy</div>
+                <div>Terms of Use</div>
+            </div>
+
+            <div class="footerRight">
+                <div class="fR1 fR">
+                    <div>Newsletter</div>
+                    <div>
+                        <form action="#">
+                            <input type="email" class="emailAddr" name="" id="" placeholder="Email address">
+                        </form>
+                    </div>
+                    <div>Subscribe</div>
+                </div>
+
+                <div class="fR2 fR">
+                    <a href="3.myPage.html">
+                        <div class="myPage">My Page</div>
+                    </a>
+                    <div>Shipping & Returns</div>
+                    <div>Trade / Press</div>
+                </div>
+
+                <div class="fR3 fR">
+                    <div>Contact</div>
+                    <div>Instagram</div>
+                    <div>Facebook</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="wrap2">
+        <!-- <input type="radio" name="" id="popRd">
+        <div class="layerPopup">
+            <div class="popups imgPopup">
+                <div class="leftArrow arrow" onclick="left()">⟨</div>
+                <div class="popImgBox">
+                    <img src="./img/koneil/21.jpg" class="popImg" alt="">
+                </div>
+                <div class="rightArrow arrow" onclick="right()">⟩</div>
+            </div>
+        </div> -->
+    </div>
+
+<script src="./js/3.myPage.js"></script>
+</body>
+</html>
