@@ -1,8 +1,12 @@
 body {
     margin: 0;
-    height: 100%;
+    /* height: 1000px; */
     background: url(../img/koneil/5.jpg) no-repeat 0% 0% / cover;
-    color: rgb(30, 30, 30)
+    color: rgb(30, 30, 30);
+
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+    /* overflow: hidden; */
 }
 body::before {
     content: '';
@@ -23,7 +27,7 @@ header {
     height: 100vh;
     transform: translateZ(-1000px);
     perspective: 400px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .wall {
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -56,10 +60,12 @@ header {
     transform-style: preserve-3d;
 }
 #slideBox {
-    /* border: 1px solid; */
-    box-sizing: border-box;
+    /* border: 1px solid;
+    box-sizing: border-box; */
     width: 100%;
     height: 100%;
+    text-align: center;
+
     transform-style: preserve-3d;
     overflow: hidden;
 
@@ -87,8 +93,9 @@ header {
     transition: all 0.9s;
 }
 .slideImg {
-    height: 360px;
-    /* height: 98%; */
+    /* height: 360px; */
+    /* height: 80%; */
+    width: 80%;
 
     /* position: absolute;
     top: 50%;
@@ -118,6 +125,7 @@ header {
 
     font-family: "Cormorant", serif;
     font-size: 15px;
+    text-align: center;
 
     display: flex;
     flex-direction: column;
@@ -301,6 +309,56 @@ header {
     top: 59%;
     left: 86%;
 }
+/* footer */
+footer {
+    width: 100%;
+    height: 40vh;
+    /* background: url(../img/koneil/63.jpg) no-repeat bottom left / cover; */
+    /* background-color: rgba(255, 255, 255, 0.2); */
+
+    color: white;
+
+    font-size: 1vw;
+    line-height: 1.5vw;
+
+    position: relative;
+}
+footer > div {
+    padding-bottom: 3vw;
+    box-sizing: border-box;
+
+    display: flex;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.footerLeft {
+    width: 50%;
+}
+.footerRight {
+    width: 50%;
+    display: flex;
+}
+.footerRight > div {
+    text-align: end;
+}
+.fR {
+    width: calc(100%/3);
+}
+.fR1 .emailAddr {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    text-align: end;
+}
+.fR1 .emailAddr:focus {
+    outline: none;
+}
+.myPage {
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
 /* media queries */
 /* back wall content adjustments */
 @media screen and (min-width: 995px) and (max-width: 1190px) {
@@ -311,7 +369,6 @@ header {
         width: 100%;
         height: 80%;
     }
-    /* bRight */
     .bRight {
         width: 100%;
         height: 20%;
@@ -321,7 +378,7 @@ header {
         align-items: center;
     }
 }
-@media screen and (min-width: 1px) and (max-width: 995px) {
+@media screen and (min-width: 800px) and (max-width: 995px) {
     .back {
         flex-direction: column;
     }
@@ -329,10 +386,80 @@ header {
         width: 100%;
         height: 70%;
     }
-    /* bRight */
     .bRight {
         width: 100%;
         height: 30%;
+    }
+    .desc {
+        font-size: 15px;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .back {
+        flex-direction: column;
+    }
+    .bLeft {
+        width: 100%;
+        height: 60%;
+    }
+    .bRight {
+        width: 100%;
+        height: 40%;
+    }
+    .desc {
+        font-size: 15px;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 700px) {
+    .back {
+        flex-direction: column;
+    }
+    .bLeft {
+        width: 100%;
+        height: 50%;
+    }
+    .bRight {
+        width: 100%;
+        height: 50%;
+    }
+    .desc {
+        font-size: 15px;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 460px) and (max-width: 600px) {
+    .back {
+        flex-direction: column;
+    }
+    .bLeft {
+        width: 100%;
+        height: 40%;
+    }
+    .bRight {
+        width: 100%;
+        height: 60%;
+    }
+    .desc {
+        font-size: 15px;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1px) and (max-width: 460px) {
+    .back {
+        flex-direction: column;
+    }
+    .bLeft {
+        width: 100%;
+        height: 40%;
+    }
+    .slideImg {
+        width: 100%;
+    }
+    .bRight {
+        width: 100%;
+        height: 60%;
     }
     .desc {
         font-size: 15px;
@@ -383,5 +510,11 @@ header {
 @media screen and (min-width: 1px) and (max-width: 360px) {
     .back {
         transform: translate(-45.5%, -45%);
+    }
+}
+/* footer */
+@media screen and (min-width: 1px) and (max-width: 1100px) {
+    footer {
+        height: calc((396.7/(694.4 + 396.7))*100vw);
     }
 }
